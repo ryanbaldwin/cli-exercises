@@ -29,6 +29,7 @@
 (defn random 
   "Creates a list n-long of random integers of a value up to max"
   [n max]
+  ; change repeatedly to use n instead of take
   (take n (repeatedly #(rand-int max))))
 
 (defn random-randomness [n]
